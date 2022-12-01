@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог - Новости</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="js/glightbox/glightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <!-- main-header -->
+    <div id="mainheader" class="d-none d-lg-block">
+        <header class="main-header py-15">
+            <div class="container">
+                <div class="header-main__top d-flex justify-content-between align-items-center">
+                    <!-- logo -->
+                    <div class="top-logo-block">
+                        <a class="logo d-block hover-opacity" href="/">
+                            <img src="img/logo.svg" alt="LOGO" title="LOGO">
+                        </a>
+                    </div>
+                    <!-- search -->
+                    <div class="top-search-block">
+                        <form action="#" class="top-search">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="">
+                                <div class="input-group-append">
+                                    <button class="btn btn-search" type="submit" name="s" value="Найти">
+                                        <span class="svg svg-search"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- social -->
+                    <div class="top-social-block">
+                        <ul class="social-icons d-flex justify-content-start align-items-center">
+                            <li><a class="d-block svg svg-social-telegram hover-opacity" href="#" rel="nofollow"
+                                    title="Telegram"></a></li>
+                            <li><a class="d-block svg svg-social-vk hover-opacity" href="#" rel="nofollow"
+                                    title="Вконтакте"></a></li>
+                            <li><a class="d-block svg svg-social-ok hover-opacity" href="#" rel="nofollow"
+                                    title="Odnoklassniki"></a></li>
+                        </ul>
+                    </div>
+                    <!-- second logo -->
+                    <div class="top-second-logo-block">
+                        <a class="logo-second d-block hover-opacity" href="https://www.mnr.gov.ru/" target="_blank">
+                            <img src="img/logo-ecology.png" alt="LOGO" title="LOGO">
+                        </a>
+                    </div>
+                </div>
+                <!-- / .header-main__top -->
+                <!-- main-menu -->
+                <div class="header-main__menu">
+                    <nav class="navbar">
+                        <ul class="d-flex justify-content-start align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="fgby.html">ФГБУ «Центр развития ВХК»</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-expanded="false">Деятельность</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="deyatelnost.html">Наша деятельность</a>
+                                    <a class="dropdown-item" href="deyatelnost-volga.html">Федеральный проект «Оздоровление Волги»</a>
+                                    <a class="dropdown-item" href="deyatelnost-baikal.html">Федеральный проект «Сохранение озера Байкал»</a>
+                                    <a class="dropdown-item" href="deyatelnost-save.html">Федеральный проект <br>
+                                        «Сохранение уникальных водных объектов»</a>
+                                    <a class="dropdown-item" href="deyatelnost-vosproizvodstvo.html">Государственная программа Российской Федерации
+                                        <br>
+                                        «Воспроизводство и использование природных ресурсов»</a>
+                                    <a class="dropdown-item" href="deyatelnost-vserossiyskaya-akciya.html">Всероссийская акция по уборке берегов «Вода
+                                        России»</a>
+                                    <a class="dropdown-item" href="deyatelnost-science-research.html">Научно-исследовательские работы</a>
+                                    <a class="dropdown-item" href="deyatelnost-international.html">Международная деятельность</a>
+                                    <a class="dropdown-item" href="deyatelnost-protivodeystvie.html">Противодействие коррупции</a>
+                                    <a class="dropdown-item" href="deyatelnost-projects.html">Завершенные проекты</a>
+                                </div>
+                            </li>
+                            <li class="nav-item active dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-expanded="false">Пресс-центр</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="blog-news.html">Новости</a>
+                                    <a class="dropdown-item" href="blog-press.html">Пресс-релизы</a>
+                                    <a class="dropdown-item" href="#">Брендбук***</a>
+                                    <a class="dropdown-item" href="blog-gallery.html">Фотогалерея</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- / .main-menu -->
+            </div>
+            <!-- / .container -->
+        </header>
+    </div>
+    <!-- / .main-header -->
+
+    <!-- headerfixed -->
+    <div id="headerfixed">
+        <div class="container">
+            <div class="header-fixed d-flex justify-content-between align-items-center">
+
+                <div class="fixed-logo-block">
+                    <a class="d-block logo hover-opacity" href="/">
+                        <img src="img/logo.svg" alt="logo" title="logo">
+                    </a>
+                    <a class="d-block logo-second hover-opacity" href="https://www.mnr.gov.ru/" target="_blank">
+                        <img src="img/logo-ecology.png" alt="logo-second" title="logo-second">
+                    </a>
+                </div>
+
+                <div class="fixed-menu-block">
+                    <nav class="navbar">
+                        <ul class="d-flex justify-content-start align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="fgby.html">ФГБУ «Центр развития ВХК»</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-expanded="false">Деятельность</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="deyatelnost.html">Наша деятельность</a>
+                                    <a class="dropdown-item" href="deyatelnost-volga.html">Федеральный проект «Оздоровление Волги»</a>
+                                    <a class="dropdown-item" href="deyatelnost-baikal.html">Федеральный проект «Сохранение озера Байкал»</a>
+                                    <a class="dropdown-item" href="deyatelnost-save.html">Федеральный проект <br>
+                                        «Сохранение уникальных водных объектов»</a>
+                                    <a class="dropdown-item" href="deyatelnost-vosproizvodstvo.html">Государственная программа Российской Федерации
+                                        <br>
+                                        «Воспроизводство и использование природных ресурсов»</a>
+                                    <a class="dropdown-item" href="deyatelnost-vserossiyskaya-akciya.html">Всероссийская акция по уборке берегов «Вода
+                                        России»</a>
+                                    <a class="dropdown-item" href="deyatelnost-science-research.html">Научно-исследовательские работы</a>
+                                    <a class="dropdown-item" href="deyatelnost-international.html">Международная деятельность</a>
+                                    <a class="dropdown-item" href="deyatelnost-protivodeystvie.html">Противодействие коррупции</a>
+                                    <a class="dropdown-item" href="deyatelnost-projects.html">Завершенные проекты</a>
+                                </div>
+                            </li>
+                            <li class="nav-item active dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-expanded="false">Пресс-центр</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="blog-news.html">Новости</a>
+                                    <a class="dropdown-item" href="blog-press.html">Пресс-релизы</a>
+                                    <a class="dropdown-item" href="#">Брендбук***</a>
+                                    <a class="dropdown-item" href="blog-gallery.html">Фотогалерея</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="fixed-search-block">
+                    <button class="btn btn-5 btn-modal-search" type="button">
+                        <span class="svg svg-search"></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- / .headerfixed -->
+
+    <!-- mobileheader -->
+    <div id="mobileheader" class="d-lg-none">
+        <!-- mobile-header -->
+        <div class="mobile-header">
+            <div class="mobile-header__left">
+                <div class="burger">
+                    <a class="svg svg-inline-burger" aria-hidden="true"></a>
+                    <a class="svg svg-inline-close" aria-hidden="true"></a>
+                </div>
+                <div class="logo-block">
+                    <a class="d-block logo" href="/">
+                        <img src="img/logo.svg" alt="LOGO" title="LOGO">
+                    </a>
+                </div>
+            </div>
+            <ul class="mobile-header__right d-flex justify-content-start align-items-center">
+                <li><a class="svg svg-inline-search btn-modal-search" href="#" aria-hidden="true"></a></li>
+            </ul>
+        </div>
+        <!-- / .mobile-header -->
+
+        <!-- mobilemenu -->
+        <div id="mobilemenu">
+            <div class="mobile-scroller">
+                <div class="mobile-wrap-menu">
+                    <div class="mobile-menu">
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="fgby.html" title="ФГБУ «Центр развития ВХК»">ФГБУ «Центр развития ВХК»</a>                                    
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="deyatelnost.html" title="Деятельность" data-toggle="collapse" data-target="#dropdown-menu-1">Деятельность</a>
+                                <div class="mobile-dropdown-menu collapse" id="dropdown-menu-1">
+                                    <a class="mobile-dropdown-item" href="deyatelnost.html">Наша деятельность</a>
+                                    <a class="mobile-dropdown-item" href="deyatelnost-volga.html">Федеральный проект
+                                        «Оздоровление Волги»</a>
+                                    <a class="mobile-dropdown-item" href="deyatelnost-baikal.html">Федеральный проект
+                                        «Сохранение озера Байкал»</a>
+                                    <a class="mobile-dropdown-item" href="deyatelnost-save.html">Федеральный проект <br>
+                                        «Сохранение уникальных водных объектов»</a>
+                                    <a class="mobile-dropdown-item" href="deyatelnost-vosproizvodstvo.html">Государственная
+                                        программа Российской Федерации
+                                        <br>
+                                        «Воспроизводство и использование природных ресурсов»</a>
+                                    <a class="mobile-dropdown-item" href="deyatelnost-vserossiyskaya-akciya.html">Всероссийская
+                                        акция по уборке берегов «Вода
+                                        России»</a>
+                                    <a class="mobile-dropdown-item"
+                                        href="deyatelnost-science-research.html">Научно-исследовательские работы</a>
+                                    <a class="mobile-dropdown-item" href="deyatelnost-international.html">Международная
+                                        деятельность</a>
+                                    <a class="mobile-dropdown-item" href="deyatelnost-protivodeystvie.html">Противодействие
+                                        коррупции</a>
+                                    <a class="mobile-dropdown-item" href="deyatelnost-projects.html">Завершенные проекты</a>
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link dropdown-toggle" href="blog-press.html" title="Пресс-центр" data-toggle="collapse" data-target="#dropdown-menu-2">Пресс-центр</a>
+                                <div class="mobile-dropdown-menu collapse" id="dropdown-menu-2">
+                                    <a class="mobile-dropdown-item" href="blog-news.html">Новости</a>
+                                    <a class="mobile-dropdown-item" href="blog-press.html">Пресс-релизы</a>
+                                    <a class="mobile-dropdown-item" href="#">Брендбук***</a>
+                                    <a class="mobile-dropdown-item" href="blog-gallery.html">Фотогалерея</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.html" title="Контакты">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-social-icons">
+                        <ul class="social-icons d-flex justify-content-start align-items-center">
+                            <li><a class="d-block svg svg-social-telegram-primary" href="#" target="_blank"
+                                    rel="nofollow" title="Telegram"></a></li>
+                            <li><a class="d-block svg svg-social-vk-primary" href="#" target="_blank" rel="nofollow"
+                                    title="Вконтакте"></a></li>
+                            <li><a class="d-block svg svg-social-ok-primary" href="#" target="_blank" rel="nofollow"
+                                    title="Telegram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / #mobilemenu -->
+    </div>
+    <!-- / .mobileheader -->
+
+    <!-- /HEADER -->
+
+
+    <!-- Main -->
+    <main class="page-main" role="main">
+
+        <section class="section-back-link pt-20 pb-30">
+            <div class="container">
+                <a class="back-link" href="#" onclick="window.history.back()">Назад</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1>Новости</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mb-xl-mobile">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-federal-news-tab" data-toggle="pill"
+                                    data-target="#pills-federal-news" type="button" role="tab"
+                                    aria-controls="pills-federal-news" aria-selected="true">Федеральные</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-regional-news-tab" data-toggle="pill"
+                                    data-target="#pills-regional-news" type="button" role="tab"
+                                    aria-controls="pills-regional-news" aria-selected="false">Региональные</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-federal-news" role="tabpanel"
+                                aria-labelledby="pills-federal-news-tab">
+                                <div class="row">
+                                    <div class="col-md-6 p-15">
+                                        <div class="card h-100 overflow-hidden border-0">
+                                            <a class="card-category" href="#">Интересное</a>
+                                            <a class="d-block hover-shine" href="blog-single.html">
+                                                <img class="card-img" src="img/bg-news-01.jpg" alt="">
+                                            </a>
+                                            <div class="card-body flex-grow2">
+                                                <a class="card-title d-block m-0" href="blog-single.html">Уровень экологической
+                                                    ответственности растет, медленно</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="card-text m-0">8 июля 2022</p>
+                                                    <a class="svg svg-arrow-link" href="blog-single.html"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-15">
+                                        <div class="card h-100 overflow-hidden border-0">
+                                            <a class="card-category" href="#">Тест длинного названия</a>
+                                            <a class="d-block hover-shine" href="blog-single.html">
+                                                <img class="card-img" src="img/bg-news-01.jpg" alt="">
+                                            </a>
+                                            <div class="card-body flex-grow2">
+                                                <a class="card-title d-block m-0" href="blog-single.html">Тест длинного заголовка.
+                                                    Уровень экологической ответственности растет, медленно</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="card-text m-0">8 июля 2022</p>
+                                                    <a class="svg svg-arrow-link" href="blog-single.html"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-15">
+                                        <div class="card h-100 overflow-hidden border-0">
+                                            <a class="card-category" href="#">Интересное</a>
+                                            <a class="d-block hover-shine" href="blog-single.html">
+                                                <img class="card-img" src="img/bg-news-01.jpg" alt="">
+                                            </a>
+                                            <div class="card-body flex-grow2">
+                                                <a class="card-title d-block m-0" href="blog-single.html">Уровень ответственности
+                                                    растет</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="card-text m-0">8 июля 2022</p>
+                                                    <a class="svg svg-arrow-link" href="blog-single.html"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-15">
+                                        <div class="card h-100 overflow-hidden border-0">
+                                            <a class="card-category" href="#">Интересное</a>
+                                            <a class="d-block hover-shine" href="blog-single.html">
+                                                <img class="card-img" src="img/bg-news-01.jpg" alt="">
+                                            </a>
+                                            <div class="card-body flex-grow2">
+                                                <a class="card-title d-block m-0" href="blog-single.html">Уровень экологической
+                                                    ответственности растет, медленно</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="card-text m-0">8 июля 2022</p>
+                                                    <a class="svg svg-arrow-link" href="blog-single.html"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-3 btn-big fw-bold mt-3" href="#">Все новости</a>
+                            </div>
+                            <div class="tab-pane fade" id="pills-regional-news" role="tabpanel"
+                                aria-labelledby="pills-regional-news-tab">
+                                <div class="row">
+                                    <div class="col-md-6 p-15">
+                                        <div class="card h-100 overflow-hidden border-0">
+                                            <a class="card-category" href="#">Интересное</a>
+                                            <a class="d-block hover-shine" href="blog-single.html">
+                                                <img class="card-img" src="img/bg-news-01.jpg" alt="">
+                                            </a>
+                                            <div class="card-body flex-grow2">
+                                                <a class="card-title d-block m-0" href="blog-single.html">Тест длинного заголовка.
+                                                    Уровень экологической ответственности растет, медленно</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="card-text m-0">8 июля 2022</p>
+                                                    <a class="svg svg-arrow-link" href="blog-single.html"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-15">
+                                        <div class="card h-100 overflow-hidden border-0">
+                                            <a class="card-category" href="#">Тест длинного названия</a>
+                                            <a class="d-block hover-shine" href="blog-single.html">
+                                                <img class="card-img" src="img/bg-news-01.jpg" alt="">
+                                            </a>
+                                            <div class="card-body flex-grow2">
+                                                <a class="card-title d-block m-0" href="blog-single.html">Уровень экологической
+                                                    ответственности растет</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="card-text m-0">8 июля 2022</p>
+                                                    <a class="svg svg-arrow-link" href="blog-single.html"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-15">
+                                        <div class="card h-100 overflow-hidden border-0">
+                                            <a class="card-category" href="#">Интересное</a>
+                                            <a class="d-block hover-shine" href="blog-single.html">
+                                                <img class="card-img" src="img/bg-news-01.jpg" alt="">
+                                            </a>
+                                            <div class="card-body flex-grow2">
+                                                <a class="card-title d-block m-0" href="blog-single.html">Уровень ответственности
+                                                    растет</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="card-text m-0">8 июля 2022</p>
+                                                    <a class="svg svg-arrow-link" href="blog-single.html"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-15">
+                                        <div class="card h-100 overflow-hidden border-0">
+                                            <a class="card-category" href="#">Интересное</a>
+                                            <a class="d-block hover-shine" href="blog-single.html">
+                                                <img class="card-img" src="img/bg-news-01.jpg" alt="">
+                                            </a>
+                                            <div class="card-body flex-grow2">
+                                                <a class="card-title d-block m-0" href="blog-single.html">Уровень экологической
+                                                    ответственности растет, медленно</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="card-text m-0">8 июля 2022</p>
+                                                    <a class="svg svg-arrow-link" href="blog-single.html"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-3 btn-big fw-bold mt-3" href="#">Все новости</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 ml-auto">
+                        <div class="sidebar-widget widget-sidebar-menu">
+                            <ul class="nav flex-column">
+                                <li class="nav-item active"><a class="nav-link" href="blog-news.html">Новости</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog-press.html">Пресс-центр</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Брендбук***</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog-gallery.html">Фотогалерея</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget widget-sidebar-menu">
+                            <h2>Темы</h2>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="#">Экопросвещение</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Цифровая трансформация</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Нацпроект «Экология»</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Уборка берегов и волонтерские акции</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Интервью и комментарии</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Зоны затопления и подтопления</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Международная деятельность</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Берегоукрепление и строительство ГТС</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Противопаводковые мероприятия</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Мероприятия</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>Контакты для СМИ</h2>
+                <div class="contact-links">
+                    <a class="contact-item contact-links__mail" href="mailto:smi@vhkrf.ru">smi@vhkrf.ru</a>
+                    <a class="contact-item contact-links__tel" href="tel:+74957806189">+7 495 780 61 89 (доб. 24923)</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-widget">
+                        <a class="logo" href="/">
+                            <img src="img/logo-white.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-widget">
+                        <p class="fz-14 fw-medium">Адрес: Российская Федерация,<br>
+                            123376, г. Москва, ул. Красная Пресня, д. 26, стр. 2<br>
+                            Тел: (495) 780–61–89, (495) 780–61–82<br>
+                            Email: office@vhkrf.ru</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h3 class="fz-18 mb-10">Основные разделы</h3>
+                        <nav class="footer-widget__menu">
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Деятельность</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Пресс-центр</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Международная деятельность</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Завершённые проекты</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Противодействие коррупции</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <div class="footer-social">
+                            <ul class="social-icons d-flex justify-content-start align-items-center">
+                                <li><a class="d-block svg svg-social-telegram-white hover-opacity" href="#"
+                                        rel="nofollow" title="Telegram"></a></li>
+                                <li><a class="d-block svg svg-social-vk-white hover-opacity" href="#" rel="nofollow"
+                                        title="Вконтакте"></a></li>
+                                <li><a class="d-block svg svg-social-ok-white hover-opacity" href="#" rel="nofollow"
+                                        title="Telegram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-widget">
+                        <div class="footer-subscribe-modal">
+                            <button type="button" class="btn btn-4 btn-big fw-bold" data-toggle="modal" data-target="#newsletterModal">Подписаться</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="footer-widget">
+                        <p class="fz-12 fw-medium">Создано Федеральным государственным бюджетным учреждением
+                            «Информационно-аналитический центр развития водохозяйственного комплекса» - 2013–2022</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 ml-auto">
+                    <div class="footer-widget">
+                        <p class="fz-12 fw-medium color-12 pt-15">© 2013–2022 Федеральный информационный портал «Вода
+                            России»</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SEARCH MODAL -->
+    <div class="modal-search-block">
+        <div class="container">
+            <div class="modal-search-wrapper">
+                <form action="#" class="top-search">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="">
+                        <div class="input-group-append">
+                            <button class="btn btn-search" type="submit" name="s" value="Найти">
+                                <span class="svg svg-search"></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="search-close">
+                    <span class="svg svg-close"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-overlay"></div>
+    <!-- / SEARCH MODAL -->
+
+
+    <!-- Bottom to top -->
+    <a class="scroll-to-top" href="#" id="scrollToTop"></a>
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-newsletter">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Подписывайтесь на нашу новостную рассылку</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Подпишитесь на нашу еженедельную рассылку, чтобы получать последние новости, обновления и удивительные предложения прямо на ваш почтовый ящик.</p>
+                    <form action="#" method="post">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Ваш email" required>
+                            <div class="input-group-append">
+                                <butoon type="submit" class="btn btn-3">Подписаться</butoon>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/glightbox/glightbox.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
